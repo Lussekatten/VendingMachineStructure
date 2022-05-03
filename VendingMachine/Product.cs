@@ -6,23 +6,16 @@ using System.Threading.Tasks;
 
 namespace VendingMachine
 {
-    enum ProductTypes
+    abstract class Product
     {
-        Beverage,
-        Food,
-        Snacks
-    }
-
-    class Product
-    {
-        public Product(string name, int price, ProductTypes type)
+        public Product(string name, int price)
         {
             Name = name;
-            Type = type;
             Price = price;
         }
         public string Name { get; }
-        public ProductTypes Type { get;}
         public int Price { get; }
+        public abstract void Examine();
+        public abstract void Use();
     }
 }

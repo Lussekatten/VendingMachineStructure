@@ -12,17 +12,17 @@ namespace VendingMachine
         {
             VendingManager vm = new VendingManager();
 
-            Console.Write("\nAvailable coin types are: {0}", vm.GetAllCoinTypes());
-            vm.AskForCoins();
+            //Console.Write("\nGiltiga valörer: {0}", vm.GetAllCoinTypes());
+            //vm.InsertMoney();
 
-            Console.WriteLine("Your balance: {0}",vm.ShowBalance());
-            vm.DisplayAvailableItems();
+            //Console.WriteLine("Ditt saldo: {0}",vm.ShowBalance());
+            //vm.ShowAll();
 
-            vm.BuyProducts();
+            //vm.Purchase();
 
-            Console.WriteLine("Enjoy your meal, said the vending machine returning {0} kr to you.", vm.ShowBalance());
-            vm.EndTransaction();
-            Console.Read();
+            //Console.WriteLine("Växel tillbaka: {0} kr", vm.ShowBalance());
+            //vm.EndTransaction();
+            //Console.Read();
         }
     }
 }
